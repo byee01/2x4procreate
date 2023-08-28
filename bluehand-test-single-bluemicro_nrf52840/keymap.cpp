@@ -28,7 +28,7 @@ Top left position is actually 0, 3.
 
 std::array<std::array<Key, MATRIX_COLS>, MATRIX_ROWS> matrix =
     {{
-        KC_E,       KC_B,   KC_RBRACKET,    KC_LBRACKET
+        KC_E,       KC_B,   KC_RBRACKET,    KC_LBRACKET,
         LGUI(KC_J), KC_S,   LGUI(KC_Y),     LGUI(KC_Z)
     }};
 
