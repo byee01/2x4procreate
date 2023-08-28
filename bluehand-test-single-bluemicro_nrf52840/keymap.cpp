@@ -21,13 +21,15 @@ For procreate, this is what we would want:
 LGUI is the Apple key.
 
 KC_LBRACKET, KC_RBRACKET, KC_B, KC_E, LGUI(KC_Z), LGUI(KC_Y), KC_S, LGUI(KC_J)
+
+Top left position is actually 0, 3.
 */
 #include "keymap.h"
 
 std::array<std::array<Key, MATRIX_COLS>, MATRIX_ROWS> matrix =
     {{
-        KC_LBRACKET,    KC_RBRACKET,    KC_B,   KC_E,
-        LGUI(KC_Z),     LGUI(KC_Y),     KC_S,   LGUI(KC_J)
+        KC_E,       KC_B,   KC_RBRACKET,    KC_LBRACKET
+        LGUI(KC_J), KC_S,   LGUI(KC_Y),     LGUI(KC_Z)
     }};
 
  
