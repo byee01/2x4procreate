@@ -14,6 +14,12 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
+Top
+[   ⌘ + Z
+]   ⌘ + Y
+B   S
+E   ⌘ + J
+Bottom (USB port)
 
 For procreate, this is what we would want:
 [,],B,E,⌘ + Z, ⌘ + Y, S, ⌘ + J
@@ -22,14 +28,26 @@ LGUI is the Apple key.
 
 KC_LBRACKET, KC_RBRACKET, KC_B, KC_E, LGUI(KC_Z), LGUI(KC_Y), KC_S, LGUI(KC_J)
 
-Top left position is actually 0, 3.
+"Top left" of the keyboard is position 3,0.
+
+So it actually should be, in order:
+KC_E,       KC_B,   KC_RBRACKET,    KC_LBRACKET
+LGUI(KC_J), KC_S,   LGUI(KC_Y),     LGUI(KC_Z)
+
+Updated
+Top
+⌘ + ;   ⌘ + Z
+L       Command + Shift + Z
+B       S
+E       ⌘ + J
+
 */
 #include "keymap.h"
 
 std::array<std::array<Key, MATRIX_COLS>, MATRIX_ROWS> matrix =
     {{
-        KC_E,       KC_B,   KC_RBRACKET,    KC_LBRACKET,
-        LGUI(KC_J), KC_S,   LGUI(KC_Y),     LGUI(KC_Z)
+        KC_E,       KC_B,   KC_L,                   LGUI(KC_SCOLON),
+        LGUI(KC_J), KC_S,   LGUI(LSHIFT(KC_Z)),     LGUI(KC_Z)
     }};
 
  
@@ -37,4 +55,3 @@ void setupKeymap() {
 ;
 
 }
-
