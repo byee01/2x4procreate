@@ -47,7 +47,7 @@ E       ⌘ + J
 std::array<std::array<Key, MATRIX_COLS>, MATRIX_ROWS> matrix =
     {{
         KC_E,       KC_B,   KC_L,                   LGUI(KC_SCOLON),
-        LGUI(KC_J), KC_S,   LGUI(LSHIFT(KC_Z)),     LGUI(KC_Z)
+        LGUI(KC_J), KC_S,   LGUI(LSFT(KC_Z)),     LGUI(KC_Z)
     }};
 
  
